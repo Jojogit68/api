@@ -50,7 +50,7 @@ app
 sequelize.initDb()
 
 app.get('/', (req, res) => {
-	res.json('Hello, Heroku ! 👋')
+	res.send("Hello, Heroku ! 👋")
 })
 
 // Points de terminaison
