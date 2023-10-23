@@ -16,5 +16,8 @@
 		"mariadb": "^3.2.2",
 		"sequelize": "^6.33.0",
 		"serve-favicon": "^2.5.0"
+	},
+	"engines": {
+		"node": ">=14"
 	}
 }
