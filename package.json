@@ -4,8 +4,7 @@
 	"description": "A rest API to handle any pokemon",
 	"main": "app.js",
 	"scripts": {
-		"start": "NODE_ENV=production node app.js",
-		"dev": "NODE_ENV=development nodemon app.js"
+		"start": "node app.js"
 	},
 	"author": "Jonathan Legrand",
 	"license": "ISC",
@@ -17,8 +16,5 @@
 		"mariadb": "^3.2.2",
 		"sequelize": "^6.33.0",
 		"serve-favicon": "^2.5.0"
-	},
-	"devDependencies": {
-		"nodemon": "^3.0.1"
 	}
 }
