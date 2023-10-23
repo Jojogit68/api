@@ -5,15 +5,10 @@ const UserModel = require("../models/users")
 const pokemons = require("./mock-pokemon")
 const bcrypt = require('bcrypt')
 
+const sequelize = new Sequelize(
+	"postgres://pokedex_7sms_user:TYNnZ4YHNvlfyLXy2lhVTWcXFNMgCpNv@dpg-ckrafv9rfc9c73dprvog-a/pokedex_7sms"
+)
 
-const sequelize = new Sequelize("pokedex", "root", "", {
-  host: "localhost",
-  dialect: "mariadb",
-  dialectOptions: {
-    timezone: "Etc/GMT-2",
-  },
-  logging: false,
-})
 
 const Pokemon = PokemonModel(sequelize, DataTypes)
 const User = UserModel(sequelize, DataTypes)
