@@ -13,7 +13,7 @@ module.exports = (app) => {
       return Pokemon.findByPk(id)
       .then((pokemon) => {
         if (pokemon === null) {
-          const message = `Le pokemon demande n'existe pas`
+          const message = `Le pokemon demandé n'existe pas`
           return res.status(404).json({ message });
         }
         const message = `Le pokémon ${pokemon.name} a bien été modifié.`
