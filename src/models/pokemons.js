@@ -1,15 +1,4 @@
-/* L’API Rest et la Base de données : Créer un modèle Sequelize */
-const validTypes = [
-	"Plante",
-	"Poison",
-	"Feu",
-	"Eau",
-	"Insecte",
-	"Vol",
-	"Normal",
-	"Electrik",
-	"Fée",
-]
+const validTypes = ["Plante", "Poison", "Feu", "Eau", "Insecte", "Vol", "Normal", "Electrik", "Fée"]
 
 module.exports = (sequelize, DataTypes) => {
 	return sequelize.define(
@@ -23,9 +12,9 @@ module.exports = (sequelize, DataTypes) => {
 			name: {
 				type: DataTypes.STRING,
 				allowNull: false,
-        unique: {
-          msg: "Le nom est déjà utilisé"
-        },
+				unique: {
+					msg: "Le nom est déjà utilisé",
+				},
 				validate: {
 					notEmpty: { msg: "Un nom de pokemon est nécessaire" },
 					notNull: { msg: "Propriété requise" },
@@ -90,9 +79,7 @@ module.exports = (sequelize, DataTypes) => {
 						}
 						value.split(",").forEach((type) => {
 							if (!validTypes.includes(type)) {
-								throw new Error(
-									`Le type doit appartenir à la liste suivante : ${validTypes}`
-								)
+								throw new Error(`Le type doit appartenir à la liste suivante : ${validTypes}`)
 							}
 						})
 					},

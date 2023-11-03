@@ -4,9 +4,7 @@ const UserModel = require("../models/users")
 const pokemons = require("./mock-pokemon")
 const bcrypt = require("bcrypt")
 
-// const sequelize = new Sequelize(
-// 	"postgres://postgres:Postgresql@localhost:5432/pokedex"
-// )
+// const sequelize = new Sequelize("postgres://postgres:Postgresql@localhost:5432/pokedex")
 
 // const sequelize = new Sequelize(
 // 	"postgres://pokedex_7sms_user:TYNnZ4YHNvlfyLXy2lhVTWcXFNMgCpNv@dpg-ckrafv9rfc9c73dprvog-a:5432/pokedex_7sms"
