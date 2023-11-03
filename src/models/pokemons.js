@@ -27,11 +27,11 @@ module.exports = (sequelize, DataTypes) => {
 					isInt: { msg: "Un nombre entier est demandé" },
 					min: {
 						args: [0],
-						msg: "Les pts de vie doivent être supérieurs ou égals à 0",
+						msg: "Les pts de vie doivent être supérieurs ou égal à 0",
 					},
 					max: {
 						args: [999],
-						msg: "Les pts de vie doivent être inférieurs ou égals à 999",
+						msg: "Les pts de vie doivent être inférieurs ou égal à 999",
 					},
 					notNull: { msg: "Propriété requise" },
 				},
@@ -43,11 +43,11 @@ module.exports = (sequelize, DataTypes) => {
 					isInt: { msg: "Un nombre entier est demandé" },
 					min: {
 						args: [0],
-						msg: "Les pts de dégât doivent être supérieurs ou égals à 0",
+						msg: "Les pts de dégât doivent être supérieurs ou égal à 0",
 					},
 					max: {
 						args: [99],
-						msg: "Les pts de dégât doivent être inférieurs ou égals à 99",
+						msg: "Les pts de dégât doivent être inférieurs ou égal à 99",
 					},
 					notNull: { msg: "Propriété requise" },
 				},
